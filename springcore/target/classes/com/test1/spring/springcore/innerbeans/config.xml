@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd"> 
+    
+<!-- bean definitions here -->
+<!-- property name="variable defined the class" -->
+<!-- Class Address used as inner beans -->
+<bean name="employee" class="com.test1.spring.springcore.innerbeans.Employee" 
+p:id="123" scope="prototype"> 
+<!-- prototype : hash codes are different-->
+<!-- By default scope is singleton: hash codes are same -->
+	<property name="address">
+		<bean name="address" class="com.test1.spring.springcore.innerbeans.Address" 
+		p:hno="1" p:address="local" p:city="abc"/>
+		<!-- nested  bean as a property for other bean -->
+		<!-- only for reference types
+		inner beans is a way to inject object similar like p schema, value as attribute and element -->
+	</property>
+</bean>   
+</beans>

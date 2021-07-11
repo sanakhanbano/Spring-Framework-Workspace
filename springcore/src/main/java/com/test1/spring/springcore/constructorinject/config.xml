@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xmlns:c="http://www.springframework.org/schema/c" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">  
+
+<bean name="address" class="com.test1.spring.springcore.constructorinject.Address" 
+p:hno="1" p:address="local" p:city="abc"/> 
+
+
+<bean  name="employee" class="com.test1.spring.springcore.constructorinject.Employee"
+c:id="123" c:address-ref="address"/>
+</beans>
+<!-- c:variable-ref="bean name -->
+<!-- Class Address:setter injection using property -->
+<!-- Class Employee:Constructor injection -->
+<!--  <constructor-arg value="123"/>--> 
+<!-- value as attribute -->
+<!-- value as element 
+<value>123</value></constructor-arg>-->
+<!--  <constructor-arg ref="address"/>-->
+<!-- value as element -->
+<!-- reference type object injection -->
+<!-- <ref bean="address"/>  <- bean of class Address is used--> 

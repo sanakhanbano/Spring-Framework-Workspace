@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd"> 
+    <!-- bean definitions here 
+    Always start with dependent or dependency bean
+    Student class depends on scores 
+    start with score-->
+<bean name="scores" class="com.test1.spring.springcore.reftypes.Score" 
+p:math="100" p:physics="100" p:chemistry="100"/>
+<!--bean of score class as reference injection in Student class-->
+<bean name="student" class="com.test1.spring.springcore.reftypes.Student" p:scores-ref="scores">
+<!-- using p schema p:variablename-ref="bean name-->
+
+<!-- reference as attribute -->
+<!--<property name="scores" ref="scores"/>-->
+
+<!-- reference as element -->
+<!--<ref bean="scores"/> <! bean of score class as reference injection
+</property>
+-->
+</bean>
+</beans>

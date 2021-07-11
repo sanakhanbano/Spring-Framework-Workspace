@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" 
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd"> 
+    
+<!-- need to give the location to load up the property file  andwe can use those properties in config file -->
+<!-- use context schema ctrl+1 for options-->
+<context:property-placeholder location="com/test1/spring/springcore/propertyplaceholder/MyDAO/database.properties"/>
+<!-- use the name property dbServer and it will be read from the property file  -->
+<bean name="MyDAO" class="com.test1.spring.springcore.propertyplaceholder.MyDAO">
+<constructor-arg>
+<value>${dbServer}</value>
+</constructor-arg>
+</bean>    
+</beans>

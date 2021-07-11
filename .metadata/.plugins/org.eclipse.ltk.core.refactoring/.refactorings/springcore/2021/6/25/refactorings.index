@@ -1,0 +1,34 @@
+1623952584289	Encapsulate field 'name'
+1623952590798	Encapsulate field 'department'
+1623953092352	Copy file
+1623953113874	Rename resource 'config.xml'
+1623953194711	Copy file
+1623953199382	Delete element
+1623953215058	Rename resource 'listconfig2.xml'
+1623954842166	Convert local variable 'context' to field
+1623956689214	Encapsulate field 'name'
+1623956697515	Encapsulate field 'models'
+1623957391640	Convert local variable 'context' to field
+1623957842761	Encapsulate field 'name'
+1623957847357	Encapsulate field 'models'
+1623959168963	Encapsulate field 'products'
+1623959176349	Encapsulate field 'id'
+1623959220326	Copy file
+1623959304419	Rename resource 'setconfig.xml'
+1623959317534	Copy compilation unit
+1624035217987	Rename resource 'maptconfig.xml'
+1624035589452	Encapsulate field 'countryandlang'
+1624035640146	Copy elements
+1624037990582	Rename resource 'mapconfig.xml'
+1624039364460	Copy elements
+1624039383939	Rename resource 'propconfig.xml'
+1624039515273	Encapsulate field 'math'
+1624039521821	Encapsulate field 'physics'
+1624039525762	Encapsulate field 'chemistry'
+1624099184072	Encapsulate field 'id'
+1624099198436	Copy file
+1624099215048	Rename resource 'refconfig.xml'
+1624100077123	Copy compilation unit
+1624121628713	Copy elements
+1624122894589	Copy elements
+1624129256047	Delete element

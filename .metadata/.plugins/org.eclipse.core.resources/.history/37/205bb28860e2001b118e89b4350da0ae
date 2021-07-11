@@ -1,0 +1,6 @@
+dbServer=testserver
+#the default db port
+dbPort=3306
+dbUser=test
+dbPass=test
+#both the keys and values are string type

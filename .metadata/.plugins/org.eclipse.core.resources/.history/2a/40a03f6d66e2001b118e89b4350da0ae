@@ -1,0 +1,15 @@
+package com.test1.spring.springcore.propertyplaceholder;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+	private static ApplicationContext context;
+	private static MyDAO dao;
+
+	public static void main(String[] args) {
+		context = new ClassPathXmlApplicationContext("com/test1/spring/springcore/propertyplaceholder/config.xml");
+		dao = (MyDAO) context.getBean("myDAO");
+	}
+
+}
